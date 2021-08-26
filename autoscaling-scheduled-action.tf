@@ -14,4 +14,5 @@ resource "aws_autoscaling_schedule" "decrease_capacity_9pm" {
   desired_capacity = 2
   start_time = "2021-12-11T09:00:00Z"
   recurrence = "00 21 * * *"
-  autoscaling_group_n
+  autoscaling_group_name = module.autoscaling.autoscaling_group_id
+}
