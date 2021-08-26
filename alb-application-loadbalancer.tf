@@ -63,7 +63,7 @@ module "alb" {
       tags =local.common_tags # Target Group Tags*/
     },  
   ]
-
+/*
   # HTTPS Listener
   https_listeners = [
     # HTTPS Listener Index = 0 for HTTPS 443
@@ -98,6 +98,7 @@ module "alb" {
       }]
     },  
   ]
+  */
   tags = local.common_tags # ALB Tags
 }
 

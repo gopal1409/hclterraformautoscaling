@@ -54,7 +54,7 @@ module "autoscaling" {
 
   image_id          = data.aws_ami.amzlinux2.id
   instance_type     = var.instance_type
-  key_name          = var.instance_keypair
+#  key_name          = var.instance_keypair
   user_data         = file("${path.module}/app1-install.sh")
   ebs_optimized     = true
   enable_monitoring = true
