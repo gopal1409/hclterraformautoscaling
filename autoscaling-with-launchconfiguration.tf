@@ -87,7 +87,7 @@ module "autoscaling" {
 
   metadata_options = {
     http_endpoint               = "enabled"
-    http_tokens                 = "optional" # At production grade you can change to "required", for our example if is optional we can get the content in metadata.html
+    http_tokens                 = "optional" 
     http_put_response_hop_limit = 32
   }
 
