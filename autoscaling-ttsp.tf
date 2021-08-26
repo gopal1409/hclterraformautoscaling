@@ -12,7 +12,7 @@ resource "aws_autoscaling_policy" "avg_cpu_policy_greater_than_xx" {
     }
   
 }
-resource "aws_autoscaling_policy" "avg_target_requests_greater_than_yy" {
+/*resource "aws_autoscaling_policy" "avg_target_requests_greater_than_yy" {
     name = "avg_target_requests_greater_than_yy"
     policy_type = "TargetTrackingScaling"
     autoscaling_group_name = module.autoscaling.autoscaling_group_id
@@ -26,4 +26,4 @@ resource "aws_autoscaling_policy" "avg_target_requests_greater_than_yy" {
       target_value = 50.0
     }
   
-}
+}*/
