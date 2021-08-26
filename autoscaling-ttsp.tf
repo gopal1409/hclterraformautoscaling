@@ -21,7 +21,7 @@ resource "aws_autoscaling_policy" "avg_target_requests_greater_than_yy" {
     target_tracking_configuration {
       predefined_metric_specification {
         predefined_metric_type = "ALBRequestCountPerTarget"
-        resource_label = "${module.alb.lb_arn_suffic}/${module.alb.target_group_arn_suffixes[0]}"
+        resource_label = "${module.alb.lb_arn_suffix}/${module.alb.target_group_arn_suffixes[0]}"
       }
       target_value = 50.0
     }
